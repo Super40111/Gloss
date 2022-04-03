@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<input type = "email", id = "Email">Email</input>
+<input type = "text", id = "Username">Username</input>
+<input type = "password", id = "Password">Password</input>
+<button type = "button", onclick = "createAccount(Username, Email, Password)">Create Account</button>
+<script>
+
+function CreateAccount(username, password, email) {
+    for (checkData = 0; checkData < user_count; checkData++) {
+        if (account_Info[checkData][1] == username) {
+            alert("Error: That username is already taken");
+            return;
+        }
+        else if (account_Info[checkData][3] == email) {
+            alert("Error: There is already an account with that username");
+            return;
+        }
+    }
+    if (validPassword(password) == false) {
+        alert("Error: That password is invalid");
+        return;
+    }
+    let newAccountArray = new Array(user_Count, username, password, email, Date.now, Date.now, 0, new Array(0), 0);
+    user_Count++;
+    let loggedIn = newAccountArray[0];
+    window.location.href = "accountPage.html";
+}
+
+function validPassword(password) {
+    if (password.length >= 8) {
+        for (i = 0; i < password.length; i++) {
+            if (!password.charAt(i).isNaN()) {
+                return true;
+            }
+        }
+    }
+    alert("Error: Your password must contain at least 8 characters long and contain at least 1 number.");
+    return false;
+}
+</script>
+</html>

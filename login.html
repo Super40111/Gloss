@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<input type = "text", id = "Username">Username</input>
+<input type = "password", id = "Password">Password</input>
+<button type = "button", onclick = "login(Username, Email, Password)">Create Account</button>
+<script>
+
+function Login(username, password) {
+        for (checkData = 0; checkData < user_Count; checkData++) {
+            if (accountInfo[checkData][1] == username || accountInfo[checkIndex][3] == username) {
+                if (accountInfo[checkData][2] == password) {
+                    loggedIn = accountInfo[checkData][0];
+                    window.location.href = "accountPage.html";
+                    return;
+                }
+                else {
+                    alert("The username or password may be incorrect");
+                    return;
+                }
+            }
+        }
+        alert("The username or password may be incorrect");
+    }
+</script>
+</html>
