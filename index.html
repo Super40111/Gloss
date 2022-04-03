@@ -1,3 +1,48 @@
-<h1> Gloss Hello </h1>
-<h2> News Stories</h2>
-<script></script>
+<!DOCTYPE html>
+<html>
+<title> Gloss </title>
+<A HREF="Pages/newsList.html"> News Stories </h2>
+<A HREF="Pages/createAccount.html"> Create Account </A>
+<A HREF="Pages/login.html"> Log In </A>
+<h1>News Stories</h1>
+<h2> Site News </h2>
+<A HREF="Pages/aboutUs.html">About Us</A>
+<script>
+    let user_Count = 0;
+    let story_Count = 0;
+    let publishers = 0;
+    let loggedIn = -1; //Account Id if logged in, -1 otherwise.
+    let account_Info = new Array(0); //Account Id, username, password, email, account creation date, last login, comment count, comment history, account type.
+    let news_data = new Array (0); //Story Id, name, publisher, link, impartial score, matterial score, accuracy score, relevence score.
+    let publisher_data = new Array(0); //Publisher Id, publisher name, average bias score, average emotional score, average accuracy score.
+
+    function Logout() {
+        loggedIn = -1;
+    }
+
+    function deleteAccount() {
+        if (user_Count <= 0) {
+            alert("There are no accounts to delete");
+            return
+        }
+    }
+
+    function adjustArray(data, adjustment) {
+        if (adjustment == "Add") {
+            return;
+        }
+        else if (adjustment == "Sub") {
+            return;
+        }
+        alert("Error in adjustArray");
+    }
+
+    function addStory() {
+
+    }
+
+    function removeStory() {
+
+    }
+</script>
+</html>
