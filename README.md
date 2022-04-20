@@ -35,3 +35,7 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+### How to use
+
+In order to properly use this site, you simply must go to https://super40111.github.io/Gloss/. It is not recommended to clone the repository yourself and run it through the command line without any additional application because it will not work.
