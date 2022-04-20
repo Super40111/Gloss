@@ -1,3 +1,3 @@
 function test() {
-  return("src Works");
+  alert("src Works");
 }
