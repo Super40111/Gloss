@@ -1,7 +1,7 @@
-import { initializeApp } from "firebase/app";
+import { initializeApp } from 'firebase/app';
 import { doc, getDoc, getDocFromCache, getFirestore, setDoc, updateDoc } from 'firebase/firestore';
-import { getAnalytics } from "firebase/analytics";
-import { getAuth, createUserWithEmailAndPassword, onAuthStateChanged, updateProfile, sendPasswordResetEmail, signOut } from "firebase/auth";
+import { getAnalytics } from 'firebase/analytics';
+import { getAuth, createUserWithEmailAndPassword, onAuthStateChanged, updateProfile, sendPasswordResetEmail, signOut } from 'firebase/auth';
 
 const firebaseConfig = initializeApp({
   apiKey: "AIzaSyAfnxyM2o2uNrcunKE2ZocNep5HFc8PauU",
@@ -16,6 +16,7 @@ const firebaseConfig = initializeApp({
 
 const firestore = getFirestore();
 const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 const analytics = getAnalytics(app);
 const reference = doc(firestore, 'value');
 const authority = getAuth();
