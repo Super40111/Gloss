@@ -29,7 +29,13 @@ onAuthStateChanged(auth, (user) => {
   }
 })
 
+document.getElementById("getNews").addEventListener("click", function() {
+  console.log("Going");
+  test();
+});
+
 function test() {
+  console.log("Gone");
   alert("Work");
 }
 
