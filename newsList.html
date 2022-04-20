@@ -2,12 +2,13 @@
 <script type="module" src="index.js"></script>
 <html>
     <body>
-    <p id="demo">X</p>
+    <h1 id="demo">X</h1>
 <input type = "text", id = "news">Story Link</input> <br>
 <button id="getNews" onclick="test">Go To Story</button>
 <script type="module" src="index.js"></script>
     <script>
     function test() {
+        document.getElementById("demo").innerHTML = updatedStory.link;
         console.log("HELP");
     }
     </script>
