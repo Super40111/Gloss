@@ -34,6 +34,9 @@ onAuthStateChanged(auth, (user) => {
   }
 })
 
+function test() {
+  alert("Work");
+}
 
 function CreateAccount(username, email, password, confirmPassword) {
   alert("create");
