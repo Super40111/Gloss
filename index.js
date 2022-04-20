@@ -76,7 +76,7 @@ function displayAccountInfo() {
     const votedList = "You have rated: ";
     for (i = 0; i < ratedCount; i++) {
       const ratedref = doc(db, "NewsList", userData.rated[i]);
-      const ratedDisplay = await.getDoc(ratedref);
+      const ratedDisplay = await getDoc(ratedref);
       if (i == 0) {
         votedList = votedList + ratedDisplay.name + "(" + userData.rated[i] + ")";
       }
@@ -131,7 +131,7 @@ function addStory(storyName, publisher, link, ImpartialScore, ObjectScore, Accur
 function displayScores(link) {
    alert("display");
   const newsref = doc(db, "NewsList", link);
-  const newsDisplay = await.getDoc(newsref);
+  const newsDisplay = await getDoc(newsref);
   window.location.href = "news.html";
   document.getElementById("linkGivenScores").innerHTML = newsDisplay.link;
   document.getElementById("Impartial").innerHTML = newsDisplay.ImpartialScore;
