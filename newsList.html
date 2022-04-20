@@ -4,5 +4,8 @@
     <h1 id="demo">X</h1>
 <input type = "text", id = "news">Story Link</input> <br>
     <button id="getNews" onclick="test()">Click me</button>
-    <script type="text/javascript" src="index.js"></script>
+    <script id="code" type="text/javascript" src="index.js"></script>
+    test() {
+        var newsGet = document.getElementById(news);
+        document.getElementById("demo").innerHTML = newsGet;
 </html>
