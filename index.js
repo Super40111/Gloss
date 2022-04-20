@@ -192,3 +192,5 @@ function updateScores (link, user, NewImpartialScore, NewObjectScore, NewAccurac
   document.getElementById("Relevency").innerHTML = updatedStory.RelevencyScore;
   
 }
+
+export {test, CreateAccount, validPassword, displayAccountInfo, login, resetPassword, addStory, displayScores, updateScores };
