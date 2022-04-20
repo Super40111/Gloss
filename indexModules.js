@@ -1,4 +1,4 @@
-import {test, CreateAccount, validPassword, displayAccountInfo, login, resetPassword, addStory, displayScores, updateScores } from 'index.js';
+import {CreateAccount, validPassword, displayAccountInfo, login, resetPassword, addStory, displayScores, updateScores } from 'index.js';
 
 
 
