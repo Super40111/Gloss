@@ -41,8 +41,7 @@ document.getElementById("getNews").addEventListener("click", function() {
 });
 
 function test() {
-  console.log("Gone");
-  alert("Work");
+  document.getElementById("demo").innerHTML = "Please Work";
 }
 
 function CreateAccount(username, email, password, confirmPassword) {
