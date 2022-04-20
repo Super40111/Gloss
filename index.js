@@ -36,6 +36,7 @@ onAuthStateChanged(auth, (user) => {
 
 
 function CreateAccount(username, email, password, confirmPassword) {
+  alert("running");
   if (!validPassword(password)) {
     return
   }
