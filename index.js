@@ -18,7 +18,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const analytics = getAnalytics(app);
 const reference = doc(firestore, 'value');
-const authority = getAuth();
+const authority = getAuth(app);
 const user = authority.currentUser;
 
 var newsButton = document.getElementById("getNews");
