@@ -36,6 +36,7 @@ onAuthStateChanged(auth, (user) => {
 
 
 function CreateAccount(username, email, password, confirmPassword) {
+  alert("create");
   if (!validPassword(password)) {
     return
   }
@@ -94,6 +95,7 @@ function displayAccountInfo() {
 
 
 function login(getEmail, getPassword) {
+  alert("login");
   signInWithEmailAndPassword(auth, getEmail, getPassword);
 }
 
@@ -129,7 +131,7 @@ function addStory(storyName, publisher, link, ImpartialScore, ObjectScore, Accur
 
 
 function displayScores(link) {
-   alert("running");
+   alert("display");
   const newsref = doc(db, "NewsList", link);
   const newsDisplay = await.getDoc(newsref);
   window.location.href = "news.html";
