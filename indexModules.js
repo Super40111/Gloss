@@ -3,5 +3,7 @@ import {test, CreateAccount, validPassword, displayAccountInfo, login, resetPass
 
 
 function test() {
-  alert("src Works");
+  var checkScores = Document.GetElementById("news").value
+  console.log("src Works");
+  displayScores(checkScores);
 }
