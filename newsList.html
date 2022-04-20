@@ -4,11 +4,13 @@
     <body>
     <h1 id="demo">X</h1>
 <input type = "text", id = "news">Story Link</input> <br>
-<button id="getNews" onclick="test()">Go To Story</button>
-    <script>
-    function test() {
-        document.getElementById("demo").innerHTML = HELP;
-        console.log("HELP");
-    }
-    </script>
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Please Work";
+}
+</script>
 </html>
