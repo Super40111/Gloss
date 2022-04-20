@@ -21,6 +21,12 @@ const reference = doc(firestore, 'value');
 const authority = getAuth();
 const user = authority.currentUser;
 
+var newsButton = document.getElementById("getNews");
+newsButton.onclick = function() {
+  console.log("Going");
+  test();
+}
+
 
 onAuthStateChanged(auth, (user) => {
   if (user) {
