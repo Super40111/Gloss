@@ -36,7 +36,6 @@ onAuthStateChanged(auth, (user) => {
 
 
 function CreateAccount(username, email, password, confirmPassword) {
-  alert("running");
   if (!validPassword(password)) {
     return
   }
@@ -130,6 +129,7 @@ function addStory(storyName, publisher, link, ImpartialScore, ObjectScore, Accur
 
 
 function displayScores(link) {
+   alert("running");
   const newsref = doc(db, "NewsList", link);
   const newsDisplay = await.getDoc(newsref);
   window.location.href = "news.html";
