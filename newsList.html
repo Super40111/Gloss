@@ -3,13 +3,12 @@
     <body>
     <h1 id="demo">X</h1>
 <input type = "text", id = "news">Story Link</input> <br>
-    <button id="getNews" onclick="test()">Click me</button>
-    <script id="code" type="text/javascript" src="index.js">
-    function test() {
+    <button id="getNews" onclick="test()">Get Story</button>
+    <script id="code" type="module" src="index.js"></script>
+    <script>
+        function test() {
         var inputVal = document.getElementById("news").value;
         document.getElementById("demo").innerHTML = inputVal
-    }</script>
-    <script>
-    
+    }
     </script>
 </html>
