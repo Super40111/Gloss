@@ -2,6 +2,7 @@ const { useState } = require('react');
 
 require('dotenv').config();
 module.exports = {
+  pathPrefix: "/index",
   siteMetadata: {
     title: `Gloss`,
     siteUrl: `https://www.yourdomain.tld`,
@@ -22,4 +23,3 @@ module.exports = {
       }
     },
     ],
-}
