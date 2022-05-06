@@ -1,4 +1,4 @@
-name: Gatsby Publish
+name: main
   # You may pin to the exact commit or the version.
   # uses: enriikke/gatsby-gh-pages-action@fbe063b0cfaa8c16ec4e346cc3c48e9b154cce87
   uses: enriikke/gatsby-gh-pages-action@v2.2.0
