@@ -4,6 +4,8 @@
 
 In order to properly use this site, you simply must go to https://super40111.github.io/Gloss/. It is not recommended to clone the repository yourself and run it through the command line without any additional application because it will not work.
 
+[Please Work](/src/pages/index.js)?
+
 ### Download
 
 Right now the github pages landing page is not working correctly and is redirecting to this page. The project does work locally though. In order to run the project for yourself, you must do the following
