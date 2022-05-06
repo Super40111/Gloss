@@ -2,13 +2,13 @@
 
 ### How to Use
 
-In order to properly use this site, you simply must go to https://super40111.github.io/Gloss/. It is not recommended to clone the repository yourself and run it through the command line without any additional application because it will not work.
+As of writing, the github pages version of the project is not working, but the local version does work.
 
-[Please Work](/src/pages/index.js)?
+In order to properly use this site, you simply must go to https://super40111.github.io/Gloss/. It is not recommended to clone the repository yourself and run it through the command line without any additional application because it will not work.
 
 ### Download
 
-Right now the github pages landing page is not working correctly and is redirecting to this page. The project does work locally though. In order to run the project for yourself, you must do the following
+As of writing, the github pages landing page is not working correctly and is redirecting to this page. The project does work locally though. In order to run the project for yourself, you must do the following
 
 1.
 Install Node.js so you can run npm install.
