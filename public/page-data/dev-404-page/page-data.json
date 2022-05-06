@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---cache-dev-404-page-js",
+    "path": "/dev-404-page/",
+    "result": {"data":{"allSiteFunction":{"nodes":[]},"allSitePage":{"nodes":[{"path":"/404/"},{"path":"/404.html"},{"path":"/aboutUs/"},{"path":"/accountPage/"},{"path":"/addStory/"},{"path":"/auth/"},{"path":"/createAccount/"},{"path":"/"},{"path":"/login/"},{"path":"/news/"},{"path":"/newsList/"},{"path":"/siteNews/"}]}},"pageContext":{}},
+    "staticQueryHashes": []}
