@@ -1,11 +1,13 @@
 import * as React from "react"
 import app from "gatsby-plugin-firebase-v9.0"
-import { collection, getFirestore, doc, setDoc, getDocs, query, where, QuerySnapshot } from "firebase/firestore"
+import { collection, getFirestore, firestore, doc, setDoc, getDocs, query, where, QuerySnapshot, DocumentReference } from "firebase/firestore"
 
 const db = getFirestore(app);
 const news = collection(db, "NewsList");
 var docSnap = '';
+var alreadyVoted = false;
 var currentStoryData;
+var newsDoc;
 // styles
 const pageStyles = {
   color: "#232129",
@@ -115,6 +117,8 @@ class CheckForm extends React.Component {
 }
 
 async function updateScores(link, impartial, object, accuracy, relevency, voteTotal) {
+  var getName = currentStoryData.name;
+  var getPublisher = currentStoryData.publisher
   var newVoteTotal = voteTotal + 1;
   var newImpartial = ((parseInt(currentStoryData.ImpartialScore) * parseInt(voteTotal)) + parseInt(impartial)) / parseInt(newVoteTotal)
   var newObject = ((parseInt(currentStoryData.ObjectScore * parseInt(voteTotal))) + parseInt(object)) / parseInt(newVoteTotal)
@@ -130,14 +134,14 @@ async function updateScores(link, impartial, object, accuracy, relevency, voteTo
     name: currentStoryData.name,
     publisher: currentStoryData.publisher
   });
-  alert("News Link: " + currentStoryData.link + 
-      "\nStory Name:" + currentStoryData.name + 
-      "\nPublisher: " + currentStoryData.publisher + 
-      "\nAccuracy Score: " + currentStoryData.AccuracyScore + 
-      "\nImparial Score: " + currentStoryData.ImpartialScore + 
-      "\nObject Score: " + currentStoryData.ObjectScore + 
-      "\nRelevency Score: " + currentStoryData.RelevencyScore + 
-      "\nRating Count: " + currentStoryData.ratingCount);
+  alert("News Link: " + link + 
+      "\nStory Name:" + getName + 
+      "\nPublisher: " + getPublisher + 
+      "\nAccuracy Score: " + newAccuracy + 
+      "\nImparial Score: " + newImpartial + 
+      "\nObject Score: " + newObject + 
+      "\nRelevency Score: " + newRelevency + 
+      "\nRating Count: " + newVoteTotal);
 }
 
 // markup

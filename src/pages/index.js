@@ -17,13 +17,6 @@ const headingAccentStyles = {
 const paragraphStyles = {
   marginBottom: 48,
 }
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
 const listStyles = {
   marginBottom: 96,
   paddingLeft: 0,
@@ -84,28 +77,28 @@ const links = [
     text: "Create Account",
     url: "/createAccount",
     description:
-      "Create your Gloss Account.",
+      "Create your Gloss Account (In Development).",
     color: "#E95800",
   },
   {
     text: "Log In",
     url: "/login",
     description:
-      "Log into a Gloss Account.",
+      "Log into a Gloss Account (In Development).",
     color: "#1099A8",
   },
   {
     text: "News List",
     url: "/accountPage",
     description:
-      "Log In to View Your Account Page",
+      "Log In to View Your Account Page.",
     color: "#BC027F",
   },
   {
     text: "Account Page",
     url: "/newsList",
     description:
-      "View news stories.",
+      "View news stories (In Development).",
     color: "#0D96F2",
   },
   {
@@ -120,13 +113,13 @@ const links = [
     url: "/classes",
     badge: true,
     description:
-      "Learn More About our Goals at Gloss (In Development)",
+      "Learn More About our Goals at Gloss (In Development).",
     color: "#663399",
   },
   {
     text: "Add Story",
     url: "/addStory",
-    description: "Add a Story to Gloss (Test Feature)",
+    description: "Add a Story to Gloss (In Development).",
     color: "#000FFF"
   }
 ]
@@ -139,11 +132,14 @@ const IndexPage = () => {
       <h1 style={headingStyles}>
         Gloss 
         <br />
-        <span style={headingAccentStyles}>— The Glossary for News Articles </span>
+        <span style={headingAccentStyles}>The Glossary for News Articles </span>
       </h1>
       <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time.{" "}
+        Gloss is a site dedicated to fighting misinformation in news stories by using a variety or user-submitted scores: <br />
+        Impartial: Whether the story is bias or not. <br />
+        Object: Whether the story is grounded in facts or emotions. <br />
+        Accuracy: Whether the author's evidence is accurate or not. <br />
+        Relevency: Whether the author's discussion is related to the topic or not. <br />
       </p>
       <ul style={listStyles}>
         {links.map(link => (
