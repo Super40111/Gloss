@@ -49,7 +49,7 @@ class CheckForm extends React.Component {
       currentStoryData = doc.data();
     });
     console.log("A")
-    if (this.state.impartial == "" && this.state.object == "" && this.state.accuracy == "" && this.state.relevency == ""){
+    if (this.state.impartial === "" && this.state.object === "" && this.state.accuracy === "" && this.state.relevency === ""){
       alert("News Link: " + currentStoryData.link + 
       "\nStory Name:" + currentStoryData.name + 
       "\nPublisher: " + currentStoryData.publisher + 
